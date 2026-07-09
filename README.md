@@ -6,12 +6,12 @@
 This repository contains the implementation of a Ordinal Graph Attention-Informed CNN framework for automated diabetic retinopathy (DR) grading from retinal fundus images.The proposed approach combines pre-trained deep learning models for feature extraction.
 ## Features
 
-- Pre-trained CNN/Transformer feature extraction
-- Graph Convolutional Network (GCN) for feature refinement
+- Pre-trained CNN feature extraction
 - Five-class diabetic retinopathy grading
-- Confidence estimation
-- Uncertainty estimation using Monte Carlo Dropout
-- Evaluation on multiple public datasets
+- A hybrid CNN–Graph Attention Network architecture for Diabetic Retinopathy grading.
+- CORAL-based ordinal regression for Severity-Aware Prediction.
+- Dual Attention Mechanism (Grad-CAM and GAT) for Explainability
+- Evaluation on public datasets
 
 ---
 
@@ -33,15 +33,8 @@ data/
 ```
 .
 ├── data/
-├── preprocessing/
-├── feature_extraction/
-├── graph_construction/
-├── models/
-├── checkpoints/
-├── utils/
-├── train.py
-├── test.py
-├── inference.py
+├── RGCNN.ipynb
+├── CNN_GAT Explainabilty.ipynb
 ├── requirements.txt
 ├── README.md
 └── LICENSE
